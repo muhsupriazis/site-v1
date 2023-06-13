@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+p,
+a,
+li {
+  font-size: 0.95rem;
+  line-height: 26px;
+}
+
+header a,
+.showcase a,
+.send {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.gray {
+  color: rgb(107, 107, 107);
+  font-weight: 200;
+}
+
+.company {
+  font-weight: 400;
+}
+
+#main {
+  padding-top: 5rem;
+  /* background-color: aqua; */
+}
+
+.desktop a:hover,
+.showcase a:hover {
+  border-bottom: 1px solid black;
+}
+
+.body {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+main {
+  /* padding: 1rem; */
+  width: 100%;
+  /* flex-grow: 1; */
+  /* border: 1px solid black; */
+}
+
+footer {
+  /* position: fixed; */
+  width: 100%;
+  /* bottom: 0; */
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul {
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.send {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+
+.button:hover,
+.send:hover {
+  background: black;
+  color: white;
+}
+
+.home {
+  /* max-width: 750px; */
+  gap: 2rem;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile img {
+  opacity: 0.5;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.profile img:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.home h1 {
+  background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.about h1 {
+  background: linear-gradient(to right, #00f7ff 0%, #008cff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.showcase h1 {
+  background: linear-gradient(to right, #a200ff 0%, #ff00ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.contact h1 {
+  background: linear-gradient(to right, #00ff9d 0%, #00b646 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+h2 {
+  padding: 0.1rem 0;
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  padding: 0.3rem 0;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+.home .hi {
+  font-size: 1.5rem;
+}
+
+.home p {
+  margin: 1rem 0;
+}
+
+/* about */
+.about ul {
+  padding-left: 1.2rem;
+}
+
+.about div {
+  margin: 1rem 0;
+}
+
+/* showcase */
+img {
+  width: 100%;
+}
+
+.showcase .portfolio {
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image {
+  position: relative;
+  transition: all 0.8 ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image p {
+  display: none;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 1s ease;
+}
+
+.image:hover p {
+  display: block;
+}
+
+.image:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+footer img {
+  width: 20px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+figure {
+  padding: 1rem 0;
+}
+
+figure img {
+  border-radius: 100%;
+  width: 100px;
+  margin: auto;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* justify-content: center;  */
+}
+
+.image a {
+  font-weight: 500;
+}
+/* contact */
+.section-contact {
+  display: flex;
+  gap: 2rem;
+}
+
+.form {
+  flex-grow: 1;
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid rgb(165, 165, 165);
+  padding: 0.5rem;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.social ul {
+}
+
+.social li {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.social li a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social li img {
+  height: 20px;
+  width: auto;
+}
+
+.home a,
+.about a {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .home {
+    flex-wrap: wrap;
+  }
+  /* p,
+  a, */
+  header {
+    top: unset;
+    bottom: 0;
+  }
+  .mobile ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .mobile ul li a span {
+    font-size: 12px;
+  }
+  .mobile img {
+    height: 20px;
+    width: auto;
+  }
+  .mobile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #main {
+    padding: 2rem 1.2rem 0rem 1.2rem;
+  }
+  .showcase .portfolio {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  section {
+    margin: 1rem 0;
+  }
+  form div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    padding: 0.1rem 0;
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    padding: 0.1rem 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .home {
+    flex-wrap: wrap;
+  }
+  /* p,
+  a, */
+  header {
+    top: unset;
+    bottom: 0;
+  }
+  .mobile ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .mobile ul li a span {
+    font-size: 12px;
+  }
+  .mobile img {
+    height: 20px;
+    width: auto;
+  }
+  .mobile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #main {
+    padding: 2rem 1.2rem 0rem 1.2rem;
+  }
+  .showcase .portfolio {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  section {
+    margin: 1rem 0;
+  }
+  form div {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 2.7rem;
+  }
+  h2 {
+    padding: 0.1rem 0;
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    padding: 0.1rem 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* p,
+  a, */
+  .desktop {
+    display: flex;
+  }
+  .home {
+    flex-wrap: nowrap;
+  }
+  header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    bottom: unset;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .mobile {
+    display: none;
+  }
+  .mobile ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .mobile ul li a span {
+    font-size: 12px;
+  }
+  .mobile img {
+    height: 20px;
+    width: auto;
+  }
+  .mobile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #main {
+    padding: 5rem 1rem 1rem 1rem;
+  }
+  .showcase .portfolio {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  section {
+    margin: 1rem 0;
+  }
+  form div {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 2.7rem;
+  }
+  h2 {
+    padding: 0.1rem 0;
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    padding: 0.1rem 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .desktop {
+    display: flex;
+  }
+  header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    bottom: unset;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .mobile {
+    display: none;
+  }
+  #main {
+    padding: 5rem 1rem 1rem 1rem;
+  }
+  .showcase .portfolio {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  section {
+    margin: 1.4rem 0;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    padding: 0.1rem 0;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding: 0.1rem 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .desktop {
+    display: flex;
+  }
+  header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    bottom: unset;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .mobile {
+    display: none;
+  }
+  #main {
+    padding: 5rem 0;
+  }
+  .showcase .portfolio {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  section {
+    margin: 1.4rem 0;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    padding: 0.1rem 0;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    padding: 0.1rem 0;
+  }
+}
